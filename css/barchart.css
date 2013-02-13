@@ -1,0 +1,93 @@
+@charset "utf-8";
+#bar-chart {
+	margin: 200px auto;
+	height: 317px;
+	width: 647px;
+	background-color:#CCC;
+}
+#x-legend {
+	float: left;
+	height: 317px;
+	width: 66px;
+	background-color:#CCC;
+}
+#lines {
+	height: 260px;
+	width: 472px;
+	float: left;
+	margin-top: 25px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+.lines li {
+	border-bottom: 1px solid red;
+	margin-bottom: 42px;
+}
+.lt-ie9 .lines li {
+	font-size: 0px;
+	line-height: 0px;
+	margin-bottom: 40px;
+}
+#bar-chart #bars {
+	float: left;
+	margin-top: 25px;
+	margin-left: -472px;
+	width: 452px;
+	height: 258px;
+	padding-left: 20px;
+}
+#bars ul {
+	width: 80px;	
+	height:258px;
+	margin-right: 40px;
+	float: left;
+	position: relative;
+}
+#bars ul li {
+	width: 38px;
+	height: 5px;
+	position:absolute;
+	bottom:0;
+}
+#bars ul li:last-child {
+	left: 38px;
+}
+#bars ul:last-child {
+	margin-right: 0px;
+}
+#bars li:nth-child(odd) { 
+	background-color:#ff6b00;
+}
+#bars li:nth-child(even) { 
+	background-color:#840084;
+}
+ul li a {
+	pointer-events:auto;
+	cursor: n-resize;
+	background-color: yellow;
+	display:block;
+	width: 100%;
+	height: 5px;
+}
+#fields {
+	margin-left: 90px;
+	padding-top: 10px;
+	width: 557px;
+	height: 30px;
+	clear: both;
+}
+#fields li {
+	float: left;
+	margin-right: 10px;
+}
+#fields li:nth-child(even) {
+	padding-right: 30px;
+}
+#fields input {
+	width: 30px;	
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Bar Chart</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link href="css/barchart.css" rel="stylesheet" type="text/css">
+<script src="js/vendor/TweenLite.min.js"></script>
+<script src="js/vendor/CSSPlugin.min.js"></script>
+<script src="js/vendor/puremvc-1.0.1.js"></script>
+<script src="js/ApplicationFacade.js"></script>
+<script src="js/controller/commands/StartupCommand.js"></script>
+<script src="js/libs/TagObject.js"></script>
+<script src="js/view/mediators/FieldsMediator.js"></script>
+<script src="js/view/components/Fields.js"></script>
+<script src="js/view/mediators/BarsMediator.js"></script>
+<script src="js/view/components/Bars.js"></script>
+</head>
+<body>
+<div id="bar-chart">
+  <div id="x-legend"></div>
+  <div id="lines">
+    <ul class="lines">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div id="bars">
+    <ul id="bars_0">
+      <li id="bars_0_0"><a id="" href="javascript:;"></a></li>
+      <li id="bars_0_1"><a href="javascript:;"></a></li>
+    </ul>
+    <ul id="bars_1">
+      <li id="bars_1_0"><a href="javascript:;"></a></li>
+      <li id="bars_1_1"><a href="javascript:;"></a></li>
+    </ul>
+    <ul id="bars_2">
+      <li id="bars_2_0"><a href="javascript:;"></a></li>
+      <li id="bars_2_1"><a href="javascript:;"></a></li>
+    </ul>
+    <ul id="bars_3">
+      <li id="bars_3_0"><a href="javascript:;"></a></li>
+      <li id="bars_3_1"><a href="javascript:;"></a></li>
+    </ul>       
+  </div>
+  <div id="fields">
+  	<ul>
+    	<li><input name="" type="text" id="field_0_0" value="160" maxlength="3"></li>
+        <li><input name="" type="text" id="field_0_1" value="80" maxlength="3"></li>
+        <li><input name="" type="text" id="field_1_0" value="35" maxlength="3"></li>
+        <li><input name="" type="text" id="field_1_1" value="100" maxlength="3"></li>
+        <li><input name="" type="text" id="field_2_0" value="150" maxlength="3"></li>
+        <li><input name="" type="text" id="field_2_1" value="200" maxlength="3"></li>
+        <li><input name="" type="text" id="field_3_0" value="210" maxlength="3"></li>
+        <li><input name="" type="text" id="field_3_1" value="220" maxlength="3"></li>
+    </ul> max: 260
+  </div>
+</div>
+<span id="log"></span>
+<!--<script src="js/vendor/jquery-1.9.1.min.js"></script> 
+<script src="js/plugins.js"></script> 
+<script src="js/main.js"></script> -->
+<script language="JavaScript" type="text/javascript">
+window.onload = function() {
+	ApplicationFacade.getInstance("chart").startup();
+}
+</script>
+</body>
+</html>
